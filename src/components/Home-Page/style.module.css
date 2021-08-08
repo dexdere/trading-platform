@@ -1,0 +1,161 @@
+.HomePage {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.titleUnderLine {
+  background: rgb(72, 218, 254);
+  background: linear-gradient(
+    90deg,
+    rgba(72, 218, 254, 1) 0%,
+    rgba(57, 151, 206, 1) 50%,
+    rgba(34, 89, 164, 1) 100%
+  );
+  width: 25%;
+  height: 3px;
+  border: 0;
+  margin: auto;
+}
+
+.underLine {
+  background-color: #7384c7;
+  height: 5px;
+  border: 0;
+  margin-top: 17%;
+  position: absolute;
+  z-index: -1;
+  top: 100px;
+  width: 100%;
+}
+
+.content {
+  margin-top: 7.5%;
+}
+
+.png {
+  height: 180px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#button {
+  background-color: #4e46cc;
+  width: 200px;
+  height: 50px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.493);
+  border: 0;
+}
+
+#button:hover {
+  cursor: pointer;
+}
+
+.footer {
+  background: rgb(17, 5, 31);
+  background: linear-gradient(
+    90deg,
+    rgba(17, 5, 31, 1) 0%,
+    rgba(36, 18, 81, 1) 50%,
+    rgba(64, 39, 129, 1) 100%
+  );
+  width: 100%;
+  height: 160px;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 15px;
+  text-align: left;
+}
+
+.footerRow {
+  align-items: center;
+}
+
+.underFooter {
+  background: rgb(64, 39, 129);
+  background: linear-gradient(
+    96deg,
+    rgba(64, 39, 129, 1) 0%,
+    rgba(36, 18, 81, 1) 50%,
+    rgba(17, 5, 31, 1) 100%
+  );
+  height: 30px;
+}
+
+.verticalLine {
+  border-left: 1px solid white;
+  height: 100px;
+  max-width: 2px !important;
+}
+
+.logo{
+  display: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  .underLine {
+    display: none;
+  }
+
+  .titleUnderLine {
+    width: 40%;
+  }
+
+  .verticalLine {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    background: rgb(64, 39, 129);
+    background: linear-gradient(
+      96deg,
+      rgba(64, 39, 129, 1) 0%,
+      rgba(36, 18, 81, 1) 50%,
+      rgba(17, 5, 31, 1) 100%
+    );
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .underLine {
+    display: none;
+  }
+
+  .titleUnderLine {
+    width: 80%;
+  }
+
+  .verticalLine {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    background: rgb(64, 39, 129);
+    background: linear-gradient(
+      96deg,
+      rgba(64, 39, 129, 1) 0%,
+      rgba(36, 18, 81, 1) 50%,
+      rgba(17, 5, 31, 1) 100%
+    );
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+  }
+}

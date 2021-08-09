@@ -1,0 +1,39 @@
+body {
+  background-color: #131722 !important;
+}
+
+.orderContainer {
+  color: white;
+  display: block;
+  float: right;
+  width: 17%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+td,
+th {
+  padding: 2px;
+}
+
+tr:nth-child(even) {
+  background-color: #212337;
+}
+
+tr:hover {
+  background-color: rgba(221, 221, 221, 0.562);
+}
+
+#tradingView {
+  position: absolute;
+  
+}

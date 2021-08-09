@@ -24,7 +24,7 @@ function HomePage() {
           <Col>
             <h4>
               <b>
-                <span style={{ color: "#4f46cc" }}>Kolayca</span> <br /> Üye Ol
+                <span style={{ color: "#4f46cc" }}>Hızlıca</span> <br /> Üye Ol
               </b>
             </h4>
             <Image className={style.png} src={icon1} rounded />
@@ -85,7 +85,9 @@ function HomePage() {
             </Col>
             <div className={style.verticalLine} />
             <Col className="col-6">
-              <h4><b>Farklı Kriptoparalar ve Limit/Stop Emirleri Kullanın</b> </h4>
+              <h4>
+                <b>Farklı Kriptoparalar ve Limit/Stop Emirleri Kullanın</b>{" "}
+              </h4>
               <p>
                 SkyNeb farklı kriptoparalar, gerçek zamanlı grafikler, grafil
                 analiz araçları ve indikatörler ile profesyoneler için

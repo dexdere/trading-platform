@@ -37,7 +37,7 @@ function OrderBook() {
     arr &&
     // eslint-disable-next-line array-callback-return
     arr.map((item, index) => {
-      if (index <= 8) {
+      if (index <= 10) {
         return (
           <tr key={index}>
             <td>{item[1]} </td>
@@ -65,7 +65,7 @@ function OrderBook() {
         {orderHead("Bids")}
         <tbody>{orderRows(bids)}</tbody>
       </table>
-
+      <br />
       <table>
         {orderHead("Asks")}
         <tbody>{orderRows(asks)}</tbody>

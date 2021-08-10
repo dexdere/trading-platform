@@ -1,0 +1,157 @@
+/* OrderBook */
+
+.orderContainer {
+  color: white;
+  display: block;
+  float: right;
+  width: 17%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #363c4e;
+  color: white;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+td,
+th {
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  /* background-color: #212337; */
+  border: 1px solid #363c4e;
+}
+
+tr:hover {
+  background-color: rgba(221, 221, 221, 0.562);
+  cursor: pointer;
+}
+
+#tradingView {
+  position: absolute;
+}
+
+/* MarketPlace */
+
+.marketDiv {
+  width: 17%;
+  float: left;
+  border: 1px solid #363c4e;
+  height: 900px;
+}
+
+.navLink {
+  color: grey !important;
+}
+
+.navLink:hover,
+.navLink:focus {
+  color: grey !important;
+}
+
+.search {
+  border: 0 !important;
+  background: #2a2e39 !important;
+  color: white !important;
+}
+
+/* BuySell */
+
+.buySellDiv {
+  width: 65%;
+  margin: auto;
+  color: white;
+  border: 1px solid #363c4e;
+  margin-top: 10px;
+}
+
+.buyInput {
+  width: 98%;
+  background: #2a2e39;
+  outline: 0;
+  border: 0;
+  color: white;
+  margin: 5px;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+
+.buySellDiv > ul {
+  padding-right: 5px;
+  margin-top: 15px;
+}
+
+.buySellDiv > article > ul > a {
+  margin-top: 5px;
+  text-decoration: none;
+  color: grey;
+  padding-right: 20px;
+}
+
+.percentButton {
+  background: #2a2e39;
+  outline: 0;
+  border: 0;
+  margin-left: 5px;
+  margin-top: 5px;
+  color: white;
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+}
+
+.percentButton:hover {
+  background: rgb(2, 177, 2);
+}
+
+.spanDiv > span > b {
+  margin-left: -50px;
+}
+
+.pDiv > p > span {
+  float: right;
+  width: 20%;
+}
+
+.pDiv {
+  padding: 15px;
+}
+
+.buyButton {
+  background: rgb(2, 177, 2);
+  width: 98%;
+  border: 0;
+  outline: 0;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.sellButton {
+  background: red;
+  width: 98%;
+  border: 0;
+  outline: 0;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.article {
+  width: 50%;
+  float: left;
+  border: 1px solid #363c4e;
+}

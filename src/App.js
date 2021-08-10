@@ -1,5 +1,6 @@
-import Home from "./components/Home-Page/HomePage";
-import Exchange from "./components/Exchange/Exchange";
+import Home from "./components/Home/HomePage";
+import Exchange from "./components/Crypto/Exchange";
+
 
 function App() {
   return (

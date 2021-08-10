@@ -96,7 +96,8 @@ tr:hover {
   padding-right: 20px;
 }
 
-.percentButton {
+.percentBuyButton,
+.percentSellButton {
   background: #2a2e39;
   outline: 0;
   border: 0;
@@ -108,8 +109,12 @@ tr:hover {
   border-radius: 10px;
 }
 
-.percentButton:hover {
+.percentBuyButton:hover {
   background: rgb(2, 177, 2);
+}
+
+.percentSellButton:hover {
+  background: red;
 }
 
 .spanDiv > span > b {
@@ -187,6 +192,4 @@ tr:hover {
   .article {
     display: none;
   }
-
-  
 }

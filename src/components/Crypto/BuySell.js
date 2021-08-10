@@ -29,10 +29,10 @@ function BuySell() {
           <br />
 
           <div>
-            <button className={style.percentButton}>25%</button>
-            <button className={style.percentButton}>50%</button>
-            <button className={style.percentButton}>75%</button>
-            <button className={style.percentButton}>100%</button>
+            <button className={style.percentBuyButton}>25%</button>
+            <button className={style.percentBuyButton}>50%</button>
+            <button className={style.percentBuyButton}>75%</button>
+            <button className={style.percentBuyButton}>100%</button>
           </div>
 
           <div className={style.pDiv}>
@@ -76,10 +76,10 @@ function BuySell() {
           <br />
 
           <div>
-            <button className={style.percentButton}>25%</button>
-            <button className={style.percentButton}>50%</button>
-            <button className={style.percentButton}>75%</button>
-            <button className={style.percentButton}>100%</button>
+            <button className={style.percentSellButton}>25%</button>
+            <button className={style.percentSellButton}>50%</button>
+            <button className={style.percentSellButton}>75%</button>
+            <button className={style.percentSellButton}>100%</button>
           </div>
 
           <div className={style.pDiv}>

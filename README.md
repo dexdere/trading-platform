@@ -1,3 +1,9 @@
+﻿# Trading Platform
+ [![Netlify Status](https://api.netlify.com/api/v1/badges/74dfb7bb-8979-4389-8e78-b0595bcf15e3/deploy-status)](https://app.netlify.com/sites/eager-thompson-941ee4/deploys)
+<br>
+[Live Demo](https://eager-thompson-941ee4.netlify.app)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

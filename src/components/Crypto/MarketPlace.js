@@ -26,7 +26,6 @@ const currencyPair = [
   { pair: "GO/BTC", lastPrice: "0.00354103", change: "-6.50%" },
   { pair: "KICK/BTC", lastPrice: "0.02053103", change: "-6.05%" },
   { pair: "DBC/BTC", lastPrice: "0.02535103", change: "+7.05%" },
-  { pair: "GGC/BTC", lastPrice: "0.00353103", change: "-4.05%" },
 ];
 
 function MarketPlace() {

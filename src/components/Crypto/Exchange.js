@@ -15,8 +15,8 @@ function Exchange() {
         symbol="BTCUSD"
         theme={Themes.DARK}
         locale="tr"
-        width="1250"
-        height="600px"
+        width="64vw"
+        height="555vh"
       />
       <BuySell />
     </div>

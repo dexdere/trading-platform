@@ -93,7 +93,7 @@ function BuySell() {
         </div>
         <div>
           <button className={style.sellButton}>
-            <b>BUY</b>
+            <b>SELL</b>
           </button>
         </div>
       </article>

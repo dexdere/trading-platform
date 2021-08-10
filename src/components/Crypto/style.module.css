@@ -155,3 +155,39 @@ tr:hover {
   float: left;
   border: 1px solid #363c4e;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  .marketDiv {
+    width: 50%;
+    background: #131722;
+  }
+
+  .orderContainer {
+    width: 50%;
+    background: #131722;
+  }
+
+  .article {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .marketDiv {
+    width: 100%;
+    background: #131722;
+  }
+
+  .orderContainer {
+    width: 100%;
+    background: #131722;
+  }
+
+  .article {
+    display: none;
+  }
+
+  
+}

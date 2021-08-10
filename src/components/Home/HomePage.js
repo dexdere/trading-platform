@@ -2,6 +2,7 @@ import React from "react";
 import style from "./style.module.css";
 import logo from "./img/logo.png";
 import { Button, Image, Container, Row, Col } from "react-bootstrap/";
+import { Link } from "react-router-dom";
 
 import icon1 from "./img/home-page-icon-1.png";
 import icon2 from "./img/home-page-icon-2.png";
@@ -73,9 +74,11 @@ function HomePage() {
       <br />
       <br />
 
-      <Button id={style.button} variant="primary">
-        Hemen Başlayın
-      </Button>
+      <Link to="/exchange">
+        <Button id={style.button} variant="primary">
+          Hemen Başlayın
+        </Button>
+      </Link>
 
       <div className={style.footer}>
         <Container>
@@ -95,9 +98,11 @@ function HomePage() {
               </p>
             </Col>
             <Col className="col-2">
-              <Button id={style.button} variant="primary">
-                Hemen Başlayın
-              </Button>
+              <Link to="/exchange">
+                <Button id={style.button} variant="primary">
+                  Hemen Başlayın
+                </Button>
+              </Link>
             </Col>
           </Row>
         </Container>

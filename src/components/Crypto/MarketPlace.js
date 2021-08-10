@@ -1,29 +1,33 @@
 import { Nav, InputGroup, FormControl } from "react-bootstrap/";
 import style from "./style.module.css";
-import axios from "axios";
-import { useState, useEffect } from "react";
 
-// const currencyPair2 = [
-//   "ethbtc",
-//   "xrpbtc",
-//   "unibtc",
-//   "ltcbtc",
-//   "linkbtc",
-//   "xlmbtc",
-//   "bchbtc",
-//   "aavebtc",
-//   "algobtc",
-//   "compbtc",
-//   "snxbtc",
-//   "batbtc",
-//   "mkrbtc",
-//   "zrxbtc",
-//   "yfibtc",
-//   "umabtc",
-//   "omgbtc",
-//   "kncbtc",
-//   "crvbtc",
-// ];
+
+const currencyPair = [
+  { pair: "ETH/BTC", lastPrice: "0.00020255", change: "-2.58%" },
+  { pair: "KCS/BTC", lastPrice: "0.00013192", change: "+5.6%" },
+  { pair: " XRP/BTC", lastPrice: "0.00002996", change: "-1.55%" },
+  { pair: "VET/BTC", lastPrice: "0.00000103", change: "+1.8%" },
+  { pair: "EOS/BTC", lastPrice: "0.00000103", change: "-2.05%" },
+  { pair: "BTT/BTC", lastPrice: "0.00002303", change: "-1.05%" },
+  { pair: "LTC/BTC", lastPrice: "0.03520103", change: "+1.5%" },
+  { pair: "TRX/BTC", lastPrice: "0.00330103", change: "	-3.05%" },
+  { pair: "BSV/BTC", lastPrice: "0.00300103", change: "	+2.05%" },
+  { pair: "COTI/BTC", lastPrice: "0.003500103", change: "+2.85%" },
+  { pair: "XYT/BTC", lastPrice: "0.00003103", change: "+3.55%" },
+  { pair: "BNB/BTC", lastPrice: "0.003500103", change: "-2.05%" },
+  { pair: "TRY/BTC", lastPrice: "0.00000123", change: "-2.05%" },
+  { pair: "ADA/BTC", lastPrice: "	0.00050103", change: "+5.05%" },
+  { pair: "NEO/BTC", lastPrice: "0.00340103", change: "-1.05%" },
+  { pair: "XLM/BTC", lastPrice: "0.00035103", change: "+5.05%" },
+  { pair: "ENQ/BTC", lastPrice: "	0.00354103", change: "+2.02%" },
+  { pair: "AVA/BTC", lastPrice: "0.02535103", change: "+3.05%" },
+  { pair: "AMB/BTC", lastPrice: "0.05335103", change: "+1.0%" },
+  { pair: "MAP/BTC", lastPrice: "0.00234103", change: "-2.05%" },
+  { pair: "GO/BTC", lastPrice: "0.00354103", change: "-6.50%" },
+  { pair: "KICK/BTC", lastPrice: "0.02053103", change: "-6.05%" },
+  { pair: "DBC/BTC", lastPrice: "0.02535103", change: "+7.05%" },
+  { pair: "GGC/BTC", lastPrice: "0.00353103", change: "-4.05%" },
+];
 
 function MarketPlace() {
   return (
@@ -85,13 +89,13 @@ function MarketPlace() {
           </tr>
         </thead>
         <tbody>
-          {/* {currencyPair.map((item, index) => (
+          {currencyPair.map((item, index) => (
             <tr key={index}>
-              <td>{currencyPair[index].pair.toUpperCase()}</td>
+              <td>{currencyPair[index].pair}</td>
               <td>{currencyPair[index].lastPrice}</td>
               <td>{currencyPair[index].change} </td>
             </tr>
-          ))} */}
+          ))}
         </tbody>
       </table>
     </div>
@@ -99,29 +103,3 @@ function MarketPlace() {
 }
 
 export default MarketPlace;
-
-// <tr>
-//             <td>ETH/BTC</td>
-//             <td>0.00020255</td>
-//             <td>-2.58%</td>
-//           </tr>
-//           <tr>
-//             <td>KCS/BTC</td>
-//             <td>0.00013192</td>
-//             <td>+5.6%</td>
-//           </tr>
-//           <tr>
-//             <td>KCS/BTC</td>
-//             <td>0.00002996</td>
-//             <td>-1.55%</td>
-//           </tr>
-//           <tr>
-//             <td>VET/BTC</td>
-//             <td>0.00000103</td>
-//             <td>+1.8%</td>
-//           </tr>
-//           <tr>
-//             <td>EOS/BTC</td>
-//             <td>0.00000103</td>
-//             <td>-2.05%</td>
-//           </tr>

@@ -84,7 +84,7 @@ function HomePage() {
         <Container>
           <Row className={style.footerRow}>
             <Col className="col-3">
-              <Image className={style.png} src={logo} fluid />
+              <Image className={style.png} style={{maxWidth:"100%", height:"auto"}} src={logo} fluid />
             </Col>
             <div className={style.verticalLine} />
             <Col className="col-6">

@@ -1,6 +1,7 @@
 import { Nav, InputGroup, FormControl } from "react-bootstrap/";
 import style from "./style.module.css";
-
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const currencyPair = [
   { pair: "ETH/BTC", lastPrice: "0.00020255", change: "-2.58%" },
@@ -28,7 +29,49 @@ const currencyPair = [
   { pair: "DBC/BTC", lastPrice: "0.02535103", change: "+7.05%" },
 ];
 
+const currencyPair2 = [
+  "ethbtc",
+  "xrpbtc",
+  "unibtc",
+  "ltcbtc",
+  "linkbtc",
+  "xlmbtc",
+  "bchbtc",
+  "aavebtc",
+  "algobtc",
+  "compbtc",
+  "snxbtc",
+  "batbtc",
+  "mkrbtc",
+  "zrxbtc",
+  "yfibtc",
+  "umabtc",
+  "omgbtc",
+  "kncbtc",
+  "crvbtc",
+];
+
 function MarketPlace() {
+  const [last, setLast] = useState();
+
+  // async function getData() {
+  //   for (let i = 0; i < 5; i++) {
+  //     await axios(`https://www.bitstamp.net/api/v2/ticker/${currencyPair2[i]}/`)
+  //       .then((res) => res.data.last)
+  //       .then((res2) => setLast(res2))
+  //       .catch((e) => console.log(e))
+  //       .finally(console.log(`${currencyPair2[i]} - Last Price: ${last}`), i++);
+  //   }
+  // }
+
+  useEffect(() => {
+    axios(`https://www.bitstamp.net/api/v2/ticker/${currencyPair2[0]}/`)
+      .then((res) => res.data.last)
+      .then((res2) => setLast(res2))
+      .catch((e) => console.log(e))
+      .finally(console.log(`${currencyPair2[0]} - Last Price: ${last}`));
+  }, [last]);
+
   return (
     <div className={style.marketDiv}>
       <InputGroup className="p-2 mb-2">
